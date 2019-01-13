@@ -1,0 +1,105 @@
+﻿<Person>
+  <FirstName>Pavel</FirstName>
+  <LastName>Jezek</LastName>
+  <HomeAddress>
+    <Address>
+      <Street>Patkova</Street>
+      <City>Prague</City>
+    </Address>
+  </HomeAddress>
+  <WorkAddress>
+    <Address>
+      <Street>Malostranske namesti</Street>
+      <City>Prague</City>
+    </Address>
+  </WorkAddress>
+  <Employees>
+    <Person>
+      <FirstName>Jiri</FirstName>
+      <LastName>Vesely</LastName>
+      <HomeAddress>
+        <Address>
+          <Street>Ctvrtkova</Street>
+          <City>Prague</City>
+        </Address>
+      </HomeAddress>
+      <WorkAddress>
+        <Address>
+          <Street>Dvorakova</Street>
+          <City>Horni Slavkov</City>
+        </Address>
+      </WorkAddress>
+      <Employees>
+      </Employees>
+      <CitizenOf>
+        <Country>
+          <Name>Czech Republic</Name>
+          <AreaCode>420</AreaCode>
+        </Country>
+      </CitizenOf>
+      <MobilePhone>
+        <PhoneNumber>
+          <Country>
+            <Country>
+              <Name>Czech Republic</Name>
+              <AreaCode>420</AreaCode>
+            </Country>
+          </Country>
+          <Number>111222333</Number>
+        </PhoneNumber>
+      </MobilePhone>
+    </Person>
+    <Person>
+      <FirstName>Jan</FirstName>
+      <LastName>Kofron</LastName>
+      <HomeAddress>
+        <Address>
+          <Street>Stredecni</Street>
+          <City>Beroun</City>
+        </Address>
+      </HomeAddress>
+      <WorkAddress>
+        <Address>
+          <Street>Husitska</Street>
+          <City>Brno</City>
+        </Address>
+      </WorkAddress>
+      <Employees>
+      </Employees>
+      <CitizenOf>
+        <Country>
+          <Name>Czech Republic</Name>
+          <AreaCode>420</AreaCode>
+        </Country>
+      </CitizenOf>
+      <MobilePhone>
+        <PhoneNumber>
+          <Country>
+            <Country>
+              <Name>Czech Republic</Name>
+              <AreaCode>420</AreaCode>
+            </Country>
+          </Country>
+          <Number>777666555</Number>
+        </PhoneNumber>
+      </MobilePhone>
+    </Person>
+  </Employees>
+  <CitizenOf>
+    <Country>
+      <Name>Czech Republic</Name>
+      <AreaCode>420</AreaCode>
+    </Country>
+  </CitizenOf>
+  <MobilePhone>
+    <PhoneNumber>
+      <Country>
+        <Country>
+          <Name>Czech Republic</Name>
+          <AreaCode>420</AreaCode>
+        </Country>
+      </Country>
+      <Number>123456789</Number>
+    </PhoneNumber>
+  </MobilePhone>
+</Person>

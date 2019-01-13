@@ -1,0 +1,5 @@
+			<td style="padding: 10px;">
+				<a href="/Books/Detail/1">Lord of the Rings</a><br />
+				Author: J. R. R. Tolkien<br />
+				Price: 59 EUR &lt;<a href="/ShoppingCart/Add/1">Buy</a>&gt;
+			</td>

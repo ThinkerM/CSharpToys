@@ -1,0 +1,6 @@
+		<tr>
+			<td><a href="/Books/Detail/3">TestBook</a></td>
+			<td>1</td>
+			<td>10 EUR</td>
+			<td>&lt;<a href="/ShoppingCart/Remove/3">Remove</a>&gt;</td>
+		</tr>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63EA5D61-D1DA-4264-B0CE-80BAB0127149}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TableEditorCore</RootNamespace>
+    <AssemblyName>TableEditorCore</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculation\BinaryFormula.cs" />
+    <Compile Include="Calculation\CalculationConstants.cs" />
+    <Compile Include="Calculation\ErrorType.cs" />
+    <Compile Include="Parsing\NonRegexCoordinatesParser.cs" />
+    <Compile Include="Parsing\ParsingConstants.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Parsing\CoordinatesParser.cs" />
+    <Compile Include="Parsing\Interfaces\ICellParser.cs" />
+    <Compile Include="Parsing\Interfaces\ICoordinatesParser.cs" />
+    <Compile Include="Parsing\Interfaces\IBinaryFormulaParser.cs" />
+    <Compile Include="Parsing\Interfaces\ISheetParser.cs" />
+    <Compile Include="Services\CellEvaluator.cs" />
+    <Compile Include="Services\CellEvaluator2.cs" />
+    <Compile Include="Services\FileLoader.cs" />
+    <Compile Include="Services\ICellEvaluator.cs" />
+    <Compile Include="Services\ICellFinder.cs" />
+    <Compile Include="TableComponents\Cells\Content\CellContent.cs" />
+    <Compile Include="TableComponents\Cells\Content\CellContentDecorator.cs" />
+    <Compile Include="TableComponents\Cells\Content\ErrorContent.cs" />
+    <Compile Include="TableComponents\Cells\Content\ICellContent.cs" />
+    <Compile Include="TableComponents\Cells\StaticCell.cs" />
+    <Compile Include="TableComponents\Cells\Content\ValueContent.cs" />
+    <Compile Include="TableComponents\ComponentsConstants.cs" />
+    <Compile Include="TableComponents\Cells\FormulaCell.cs" />
+    <Compile Include="Services\CellFinder.cs" />
+    <Compile Include="TableComponents\Cells\CellGenerator.cs" />
+    <Compile Include="TableComponents\Coordinates.cs" />
+    <Compile Include="TableComponents\Cells\EmptyCell.cs" />
+    <Compile Include="TableComponents\Cells\ErrorCell.cs" />
+    <Compile Include="TableComponents\Cells\ICell.cs" />
+    <Compile Include="TableComponents\ISheet.cs" />
+    <Compile Include="TableComponents\Cells\NumberCell.cs" />
+    <Compile Include="TableComponents\Sheet.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Parsing\CellParser.cs" />
+    <Compile Include="Parsing\BinaryFormulaParser.cs" />
+    <Compile Include="Parsing\ParsingExceptions.cs" />
+    <Compile Include="Parsing\SheetParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableComponents\SheetRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

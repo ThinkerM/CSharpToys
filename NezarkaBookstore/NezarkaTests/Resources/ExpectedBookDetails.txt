@@ -1,0 +1,7 @@
+	Book details:
+	<h2>Going Postal</h2>
+	<p style="margin-left: 20px">
+	Author: Terry Pratchett<br />
+	Price: 28 EUR<br />
+	</p>
+	<h3>&lt;<a href="/ShoppingCart/Add/3">Buy this book</a>&gt;</h3>

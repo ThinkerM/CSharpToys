@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BC760A4-B8FC-41CC-B7DB-8B0F65DBD013}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NezarkaView</RootNamespace>
+    <AssemblyName>NezarkaView</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.8.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.8.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Cart\CartItemView.cs" />
+    <Compile Include="Components\Cart\CartTableView.cs" />
+    <Compile Include="Components\CommandProcessedView.cs" />
+    <Compile Include="Components\EmptyHeader.cs" />
+    <Compile Include="Components\NezarkaCommonHeaderView.cs" />
+    <Compile Include="Components\Products\CopyrightableProductListItemView.cs" />
+    <Compile Include="Components\Products\CopyrightableProductViewBase.cs" />
+    <Compile Include="Components\Products\CopyrightableProductInfoView.cs" />
+    <Compile Include="Components\Products\CopyrightableProductListView.cs" />
+    <Compile Include="Components\CustomerMenuView.cs" />
+    <Compile Include="Components\NezarkaPageStyleSetup.cs" />
+    <Compile Include="Links\ILinkGenerator.cs" />
+    <Compile Include="Links\BookLinkGenerator.cs" />
+    <Compile Include="Links\LinkingHelper.cs" />
+    <Compile Include="Pages\PageViewBase.cs" />
+    <Compile Include="Pages\PageWithGenericHeaderViewBase.cs" />
+    <Compile Include="ViewConstants.cs" />
+    <Compile Include="IView.cs" />
+    <Compile Include="Pages\ProductDetailsPage.cs" />
+    <Compile Include="Pages\InvalidRequestPage.cs" />
+    <Compile Include="Pages\ItemsOfferPage.cs" />
+    <Compile Include="Pages\ShoppingCartPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NezarkaCommonLibrary\NezarkaCommonLibrary.csproj">
+      <Project>{69ff048e-0c45-47a2-8516-e259ef4f8c34}</Project>
+      <Name>NezarkaCommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NezarkaModel\NezarkaModel.csproj">
+      <Project>{7fe52743-0804-4ef8-821e-5003ccaf4f7e}</Project>
+      <Name>NezarkaModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

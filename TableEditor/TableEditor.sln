@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableEditorCore", "TableEditorCore\TableEditorCore.csproj", "{63EA5D61-D1DA-4264-B0CE-80BAB0127149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableEditorCoreTests", "TableEditorCoreTests\TableEditorCoreTests.csproj", "{76B33C09-2147-4226-BBFD-8831698997D8}"
+EndProject
+Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63EA5D61-D1DA-4264-B0CE-80BAB0127149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EA5D61-D1DA-4264-B0CE-80BAB0127149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EA5D61-D1DA-4264-B0CE-80BAB0127149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EA5D61-D1DA-4264-B0CE-80BAB0127149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B33C09-2147-4226-BBFD-8831698997D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B33C09-2147-4226-BBFD-8831698997D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B33C09-2147-4226-BBFD-8831698997D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B33C09-2147-4226-BBFD-8831698997D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CA74F59-F231-451F-9003-40816B3B1A80}
+	EndGlobalSection
+EndGlobal

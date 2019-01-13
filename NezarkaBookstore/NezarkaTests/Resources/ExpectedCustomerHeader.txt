@@ -1,0 +1,8 @@
+	<h1><pre>  v,<br />Nezarka.NET: Online Shopping for Books</pre></h1>
+	Jan, here is your menu:
+	<table>
+		<tr>
+			<td><a href="/Books">Books</a></td>
+			<td><a href="/ShoppingCart">Cart (0)</a></td>
+		</tr>
+	</table>
